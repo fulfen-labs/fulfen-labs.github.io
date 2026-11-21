@@ -1,39 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fulfen Labs</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fulfen Labs: forward deployed engineering</title>
+<meta name="description" content="Fulfen Labs is a forward deployed engineering practice that takes AI from pilot to production inside the customer&#x27;s own systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center p-6 selection:bg-sky-500 selection:text-white">
-<div class="text-center max-w-2xl mx-auto">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8">
-        Fulfen Labs
-    </h1>
-
-    <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-10 leading-relaxed">
-        Fulfen Labs accelerates enterprise AI adoption through proven strategies and Google Cloud expertise. We research, develop, and deploy best practices for AI-native applications, informed by real-world experience in cloud modernisation and a commitment to delivering significant business impact.
-    </p>
-
-    <a href="mailto:hello@fulfenlabs.io" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-lg text-base sm:text-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-black">
-        Contact Us
-    </a>
-</div>
-
-<footer class="absolute bottom-4 left-0 right-0 text-center text-gray-500 text-sm">
-    &copy; <span id="currentYear"></span> Fulfen Labs. All rights reserved.
-</footer>
-
-<script>
-    // Script to set the current year in the footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-</script>
+<body>
+<header><div class="wrap"><a class="brand" href="./">Fulfen<span>Labs</span></a><nav><a href="method/">How we work</a><a href="team/">Team</a><a href="handbook/">Handbook</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<div class="hero"><div class="wrap">
+<p class="kicker">Forward deployed engineering</p>
+<h1>From AI pilot to production, inside your own systems.</h1>
+<p class="lede">Fulfen Labs is a forward deployed engineering practice. We embed with the people who will use a system,
+build it with their data and constraints, and leave behind something they can prove, run and change themselves.</p>
+<a class="btn" href="#contact">Start a conversation</a><a class="btn ghost" href="method/">How we work</a>
+</div></div>
+<section class="soft"><div class="wrap">
+<div class="grid">
+<div class="card"><p class="kicker">Embed</p><h3>Work where the problem is</h3><p>Discovery with the people who do the work, in their tools and their data, before a line of design is written.</p></div>
+<div class="card"><p class="kicker">Build</p><h3>Production code, not demos</h3><p>Grounded models, tools and agents engineered to the customer's security, cost and reliability limits.</p></div>
+<div class="card"><p class="kicker">Prove</p><h3>Evidence, then handover</h3><p>Evaluations and release gates that show the system is better, not just different, and a team ready to own it.</p></div>
+</div></div></section>
+<section><div class="wrap">
+<h2>An owner and an AI team</h2>
+<p class="lede">Fulfen Labs is led by Daniel Vaughan. The rest of the team are AI characters, each with a role taken from
+<em>The Forward Deployed Engineer's Handbook</em>: engagement lead, engineers, evaluation, safety, design, adoption and value.</p>
+<div class="strip"><span style="background-image:url(img/team/mo.jpg)" title="Mo Greenhalgh"></span><span style="color:#3c3c3c" title="Malcolm Winstanley">M</span><span style="background-image:url(img/team/gareth.jpg)" title="Gareth Cadwaladr"></span><span style="color:#2e8b3e" title="Colin Ollerenshaw">C</span><span style="background-image:url(img/team/yvonne.jpg)" title="Yvonne Standish"></span><span style="background-image:url(img/team/vik.jpg)" title="Vik Bassi"></span><span style="color:#7a1f2b" title="Derek Tattersall">D</span><span style="color:#17a2a0" title="Hyun-joo Lee">H</span><span style="color:#c0392b" title="Neil Whitworth">N</span><span style="color:#4a4a48" title="Simon Ainscough">S</span><span style="color:#1f2d52" title="Emeka Ezeani">E</span><span style="color:#5d3a1a" title="Ken Ramsbottom">K</span><span style="color:#d63031" title="Dez Mulvaney">D</span><span style="color:#d6246e" title="Bev">B</span></div>
+<a href="team/">Meet the team</a>
+</div></section>
+<section class="soft"><div class="wrap">
+<p class="kicker">The handbook</p>
+<h2>The Forward Deployed Engineer's Handbook</h2>
+<p class="lede">The practice works the way the handbook describes: 27 chapters in six parts, each with a video lesson
+presented by the team.</p>
+<a class="btn" href="handbook/">About the handbook</a><a class="btn ghost" href="https://youtu.be/mhLnwv_amvI">Watch lesson 1</a>
+</div></section>
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p class="lede">Tell us what you are trying to put into production.</p>
+<a class="btn" href="mailto:hello@fulfenlabs.io">hello@fulfenlabs.io</a>
+</div></section>
+</main>
+<footer><div class="wrap"><span>&copy; 2026 Fulfen Labs</span><span>The Fulfen Labs team are AI characters, except Daniel Vaughan.</span></div></footer>
 </body>
 </html>
