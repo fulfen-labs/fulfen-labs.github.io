@@ -1,7 +1,4 @@
-:root{--ink:#0A0B0D;--ink-2:#101317;--line:rgba(233,230,222,.10);--line-strong:rgba(233,230,222,.22);
---paper:#E9E6DE;--muted:#8B9098;--signal:#F2A43A;--signal-dim:rgba(242,164,58,.14);
---display:Archivo,"Helvetica Neue",Arial,sans-serif;--body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
---mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;--gut:clamp(16px,4vw,40px)}
+:root{--ink:#0A0B0D;--ink-2:#101317;--line:rgba(233,230,222,.10);--line-strong:rgba(233,230,222,.22);--paper:#E9E6DE;--muted:#8B9098;--signal:#F2A43A;--signal-dim:rgba(242,164,58,.14);--display:Archivo,"Helvetica Neue",Arial,sans-serif;--body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;--gut:clamp(16px,4vw,40px)}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;color-scheme:dark}
 body{margin:0;background-color:var(--ink);color:var(--paper);font:400 17px/1.6 var(--body);
 background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
