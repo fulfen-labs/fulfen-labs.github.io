@@ -22,19 +22,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="fulfen-page.css">
 <link rel="stylesheet" href="preview.css">
+<script src="fulfen-page.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header><div class="wrap"><a class="brand" href="./"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path class="tk" d="M2 10V2h8M22 2h8v8M30 22v8h-8M10 30H2v-8"/><circle class="nd" cx="16" cy="16" r="4"/></svg>Fulfen <span>Labs</span></a><nav aria-label="Main"><a href="handbook/">Handbook</a><a href="lessons/">Lessons</a><a href="how-it-works/">How it works</a><a href="working-rules/">Working rules</a><a href="self-assessment/">Self-assessment</a><a href="cast/">Cast</a><a href="#contact">Contact</a></nav></div></header>
 <main id="main" tabindex="-1">
-<div class="hero"><div class="wrap"><div class="frame">
-<h1>Own the system that does the work.</h1>
-<p class="lede">Fulfen Labs is the home of <em>The Forward Deployed Engineer's Handbook</em> and its method: how an AI
+<div class="hero fulfen-leadspace"><div class="wrap"><div class="frame fulfen-leadspace__frame">
+<h1 class="fulfen-leadspace__title">Own the system that does the work.</h1>
+<p class="lede fulfen-leadspace__lede">Fulfen Labs is the home of <em>The Forward Deployed Engineer's Handbook</em> and its method: how an AI
 system gets from pilot to production, shown end to end. It is an illustrative practice: Daniel Vaughan, who wrote the
 handbook, and a cast of AI characters who show how the work divides.</p>
-<div class="rule"></div>
-<div class="actions"><a class="btn" href="https://leanpub.com/fde-handbook">Read the handbook</a><a class="link" href="https://youtu.be/mhLnwv_amvI">Watch lesson 1</a></div>
+<div class="rule fulfen-leadspace__rule" aria-hidden="true"></div>
+<div class="actions fulfen-leadspace__actions"><a class="btn" href="https://leanpub.com/fde-handbook">Read the handbook</a><a class="link" href="https://youtu.be/mhLnwv_amvI">Watch lesson 1</a></div>
 </div></div></div>
 <section><div class="wrap two">
 <div><h2>Every demo works. Little of it ships.</h2></div>
@@ -44,6 +46,13 @@ the result.</p>
 <p class="sub">That system is the real work, and it should belong to the organisation that runs it. The handbook shows
 how to build it with the people who will use it, inside their own systems, and how to hand it over so they can run and
 improve it alone.</p></div>
+</div></section>
+<section><div class="wrap two">
+<div><h2>Put what must hold where it cannot be argued with</h2><p class="sub">Some rules must hold every time. Put them in code, permissions and data access, where the model's choices cannot reach them <span class="cite">[handbook ch. 24]</span>.</p></div>
+<div><figure class="fulfen-artefact fulfen-artefact--text"><div class="fulfen-artefact__bar"><span>Working rule</span><span class="fulfen-artefact__name">1 of 22</span></div>
+<div class="fulfen-artefact__body fulfen-artefact__body--text"><h3>1. If a rule must always hold, enforce it in code, permissions or gates, not in a prompt.</h3>
+<ul><li><strong>Instead of:</strong> writing the rule clearly in the instructions and trusting the model to follow it.</li><li><strong>Why:</strong> instructions are followed most of the time, not every time. Long context can crowd them out, and text the model reads can talk it out of them. A limit, a prohibition or a required order of steps belongs in something that runs whatever the model decides.</li><li><strong>Example:</strong> the retailer's refund limit sits in the agent's instructions. In testing, a customer persuades the agent that "the manager already approved" a larger refund. The fix is a refund gate in code, with the limit held in configuration the finance team owns; the instructions only explain the process to customers <span class="cite">[handbook ch. 21]</span>.</li><li><strong>Chapters:</strong> 17, 21.</li></ul></div>
+<figcaption class="fulfen-artefact__caption"><a href="working-rules/">Read the working rules</a></figcaption></figure></div>
 </div></section>
 <section><div class="wrap two">
 <div><h2>The method is in print</h2></div>
@@ -78,12 +87,12 @@ client work.</p>
 <div class="strip"><span style="background-image:url(../../img/team/mo.jpg)" title="Mo Greenhalgh, AI character"></span><span style="background-image:url(../../img/team/malcolm.jpg)" title="Malcolm Winstanley, AI character"></span><span style="background-image:url(../../img/team/gareth.jpg)" title="Gareth Cadwaladr, AI character"></span><span style="background-image:url(../../img/team/colin.jpg)" title="Colin Ollerenshaw, AI character"></span><span style="background-image:url(../../img/team/yvonne.jpg)" title="Yvonne Standish, AI character"></span><span style="background-image:url(../../img/team/vik.jpg)" title="Vik Bassi, AI character"></span><span style="background-image:url(../../img/team/derek.jpg)" title="Derek Tattersall, AI character"></span><span style="background-image:url(../../img/team/hyunjoo.jpg)" title="Hyun-joo Lee, AI character"></span><span style="background-image:url(../../img/team/neil.jpg)" title="Neil Whitworth, AI character"></span><span style="background-image:url(../../img/team/simon.jpg)" title="Simon Ainscough, AI character"></span><span style="background-image:url(../../img/team/emeka.jpg)" title="Emeka Ezeani, AI character"></span><span style="background-image:url(../../img/team/ken.jpg)" title="Ken Ramsbottom, AI character"></span><span style="background-image:url(../../img/team/dez.jpg)" title="Dez Mulvaney, AI character"></span><span style="background-image:url(../../img/team/bev.jpg)" title="Bev, AI character"></span><span style="background-image:url(../../img/team/michaela.jpg)" title="Michaela Hebden, AI character"></span></div><a href="cast/">Meet the cast</a>
 <p class="note"><strong>An illustrative practice.</strong> Fulfen Labs is a worked example of how a forward deployed engineering practice runs, built around the handbook. Daniel Vaughan is real and wrote the handbook. Everyone else is an AI character. The engagements and examples on this site are fictional unless they say otherwise. There are no clients, case studies or results here.</p></div>
 </div></section>
-<section id="contact"><div class="wrap"><div class="frame">
+<section id="contact"><div class="wrap">
 <h2>Questions about the handbook?</h2>
 <p class="sub">Write to hello@fulfenlabs.io about the handbook, the lessons or the working rules. If you find a mistake, we would
 like to know: corrections are made and noted.</p>
-<div class="actions" style="margin-top:28px"><a class="btn" href="mailto:hello@fulfenlabs.io">Email hello@fulfenlabs.io</a></div>
-</div></div></section>
+<ul class="fulfen-links"><li><a href="mailto:hello@fulfenlabs.io">Email hello@fulfenlabs.io</a></li></ul>
+</div></section>
 </main>
 <footer><div class="wrap"><p>&copy; 2026 Fulfen Labs. An illustrative practice: it shows the method of <em>The Forward Deployed Engineer's Handbook</em> end to end, and it does not offer services.</p><p>Everyone pictured on this site is an AI character, except Daniel Vaughan. <a href="kit/">Kit</a></p></div></footer>
 </body>
